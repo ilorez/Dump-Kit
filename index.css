@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    background-image: url(./images/background-dumps.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(248, 244, 179);
+    padding: 1.5rem 3rem;
+}
+
+header h1 {
+    color: rgb(53, 53, 53);
+    font-size: 3rem;
+}
+
+header p {
+
+    color: #707070;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: -7rem;
+    justify-content: space-between;
+
+}
+
+main .keys {
+    border-top: 0.2rem solid rgb(255, 255, 255);
+    border-bottom: 0.2rem solid rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    width: 7%;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: .01s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .keys span {
+    color: rgba(241, 208, 147, 0.671);
+    margin-top: 2px;
+}
+
+main .active {
+    position: relative;
+    top: 10px;
+    scale: 1.1;
+    border-top: 0.3rem solid rgb(252, 183, 57);
+}
+
+main .keys:hover {
+    scale: 1.1;
+    border-color: rgb(252, 183, 57);
+}
+
+@media (max-width:1000px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+
+        font-size: 1rem;
+    }
+
+    main {
+        top: 0rem;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    main .keys {
+        width: 40%;
+        margin: 10px 1% 00 00;
+    }
+
+}
