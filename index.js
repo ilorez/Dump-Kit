@@ -85,7 +85,7 @@ addEventListener("keypress", event => {
         t = 6
     }
     if (event.key === 'k') {
-        t = 8
+        t = 7
     }
     if (event.key === 'l') {
         t = 8
